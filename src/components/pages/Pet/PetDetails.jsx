@@ -54,7 +54,7 @@ function PetDetails() {
             {pet.images.map((image, index) => (
               <img
                 key={index}
-                src={`${import.meta.env.VITE_REACT_APP_API}/images/pets/${image}`}
+                src={`${import.meta.env.APP_REACT_API}/images/pets/${image}`}
                 alt={pet.name}
               />
             ))}

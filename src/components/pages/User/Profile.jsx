@@ -80,7 +80,7 @@ function Profile() {
             src={
               preview
                 ? URL.createObjectURL(preview)
-                : `${import.meta.env.VITE_REACT_APP_API}/images/users/${user.image}`
+                : `${import.meta.env.APP_REACT_API}/images/users/${user.image}`
             }
             alt={user.name}
           />

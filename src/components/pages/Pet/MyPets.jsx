@@ -23,8 +23,6 @@ function MyPets() {
         },
       })
       .then((response) => {
-        console.log(response.data.myPets)
-        console.log(token)
         setPets(response.data.myPets)
       })
       .catch((err) => {
@@ -87,7 +85,7 @@ function MyPets() {
           pets.map((pet) => (
             <div key={pet._id} className={styles.petlist_row}>
               <RoundedImage
-                src={`${import.meta.env.VITE_REACT_APP_API}/images/pets/${pet.images[0]}`}
+                src={`${import.meta.env.APP_REACT_API}/images/pets/${pet.images[0]}`}
                 alt={pet.name}
                 width="px75"
               />

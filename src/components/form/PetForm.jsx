@@ -46,7 +46,7 @@ function PetForm({ handleSubmit, petData, btnText }) {
           : pet.images &&
             pet.images.map((image, index) => (
               <img
-                src={`${import.meta.env.VITE_REACT_APP_API}/images/pets/${image}`}
+                src={`${import.meta.env.APP_REACT_API}/images/pets/${image}`}
                 alt={pet.name}
                 key={`${pet.name}+${index}`}
               />

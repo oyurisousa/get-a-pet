@@ -26,7 +26,7 @@ function Home() {
             <div className={styles.pet_card} key={pet._id}>
               <div
                 style={{
-                  backgroundImage: `url(${import.meta.env.VITE_REACT_APP_API}/images/pets/${pet.images[0]})`,
+                  backgroundImage: `url(${import.meta.env.APP_REACT_API}/images/pets/${pet.images[0]})`,
                 }}
                 className={styles.pet_card_image}
               ></div>

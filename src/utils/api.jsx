@@ -1,4 +1,4 @@
 import axios from 'axios'
 export default axios.create({
-  baseURL: import.meta.env.VITE_REACT_APP_API,
+  baseURL: import.meta.env.APP_REACT_API,
 })
