@@ -46,7 +46,7 @@ function EditPet() {
     formData.append('pet', petFormData)
 
     const data = await api
-      .patch(`pets/${pet._id}`, formData, {
+      .patch(`pets/edit/${pet._id}`, formData, {
         headers: {
           Authorization: `Bearer ${JSON.parse(token)}`,
           'Content-Type': 'multipart/form-data',

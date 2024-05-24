@@ -14,6 +14,7 @@ function PetForm({ handleSubmit, petData, btnText }) {
     console.log(Array.from(e.target.files))
     setPreview(Array.from(e.target.files))
     setPet({ ...pet, images: [...e.target.files] })
+    console.log('pets aqui: ', pet)
   }
 
   function handleChange(e) {
