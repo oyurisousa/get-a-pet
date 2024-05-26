@@ -16,6 +16,7 @@ function MyPets() {
   const { setFlashMessage } = useFlashMessage()
 
   useEffect(() => {
+    console.log(token)
     api
       .get('/pets/mypets', {
         headers: {

@@ -20,7 +20,6 @@ function AddPet() {
 
     const formData = new FormData()
 
-    console.log(pet.images)
     const petFormData = await Object.keys(pet).forEach((key) => {
       if (key === 'images') {
         for (let i = 0; i < pet[key].length; i++) {
@@ -41,7 +40,6 @@ function AddPet() {
         },
       })
       .then((response) => {
-        console.log(response.data)
         return response.data
       })
       .catch((err) => {

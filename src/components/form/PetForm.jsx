@@ -11,10 +11,8 @@ function PetForm({ handleSubmit, petData, btnText }) {
   const colors = ['Branco', 'Preto', 'Cinza', 'Caramelo']
 
   function onFileChange(e) {
-    console.log(Array.from(e.target.files))
     setPreview(Array.from(e.target.files))
     setPet({ ...pet, images: [...e.target.files] })
-    console.log('pets aqui: ', pet)
   }
 
   function handleChange(e) {

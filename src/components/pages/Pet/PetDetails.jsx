@@ -22,7 +22,9 @@ function PetDetails() {
 
   async function schedule() {
     let msgType = 'success'
-
+    console.log(token)
+    console.log(pet._id)
+    console.log(JSON.parse(token))
     const data = await api
       .patch(`pets/schedule/${pet._id}`, {
         headers: {
@@ -35,6 +37,7 @@ function PetDetails() {
       })
       .catch((err) => {
         console.log(err)
+        console.log(`Bearer ${JSON.parse(token)}`)
         msgType = 'error'
         return err.response.data
       })
