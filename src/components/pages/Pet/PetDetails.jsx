@@ -26,11 +26,15 @@ function PetDetails() {
     console.log(pet._id)
     console.log(JSON.parse(token))
     const data = await api
-      .patch(`pets/schedule/${id}`, {
-        headers: {
-          Authorization: `Bearer ${JSON.parse(token)}`,
+      .patch(
+        `pets/schedule/${id}`,
+        {},
+        {
+          headers: {
+            Authorization: `Bearer ${JSON.parse(token)}`,
+          },
         },
-      })
+      )
       .then((response) => {
         console.log(response.data)
         setPet(response.data.pet)
